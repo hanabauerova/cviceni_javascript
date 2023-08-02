@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kolosalon - Půjčovna</h1>
+    <section id="cbx">
+      <input type="checkbox" name="horske" id="horske" checked />Horské 500
+      Kč/den
+      <input type="text" name="hks" id="hks" />
+      <br />
+
+      <input type="checkbox" name="detske" id="detske" /> Dětské 200 Kč/den
+      <input type="text" name="dks" id="dks" />
+      <br />
+
+      <input type="checkbox" name="silnicni" id="silnicni" />Siliční 1500 Kč/den
+      <input type="text" name="sks" id="sks" />
+      <br />
+
+      <input type="checkbox" name="gravel" id="gravel" />Gravel 2500 Kč/den
+      <input type="text" name="gks" id="gks" />
+    </section>
+    <hr />
+    <section id="menu-select">
+      <label for="pocet-dnu">Počet dnů:</label>
+      <select name="pocet-dnu" id="pocet-dnu">
+        <option value="1">5 dnů</option>
+        <option value="2">týden</option>
+        <option value="3">2 týdny</option>
+        <option value="4">měsíc</option>
+      </select>
+    </section>
+    <section id="cyklonosic">
+      <hr />
+      <input type="radio" name="cs" id="cs" />Cyklonosič střešní (+5% z celkové
+      ceny)
+      <br />
+      <input type="radio" name="cs" id="ctz" />Cyklonosič na tažné zařízení
+      (+10procent z celkové ceny)
+      <br />
+      <input type="radio" name="cs" id="nc" checked/>Není třeba cyklonosič
+      <br />
+    </section>
+    <hr />
+    <section id="vypocet">
+      <button id="suma">Celková částka</button>
+      <input type="text" name="vysledek" id="vysledek" placeholder="Výsledek" />
+      <br />
+      <br />
+      <input type="text" name="rozpocet" id="rozpocet" placeholder="Váš rozpočet" />
+      <button id="odecet">Odečíst</button>
+      <br />
+      <br />
+      <label id="prosel"></label>
+    </section>
+    <hr />
+    <section id="email-sec">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email@email.cz"
+      />
+      <button id="odeslat">Odeslat</button>
+      <label id="zavinac"></label>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

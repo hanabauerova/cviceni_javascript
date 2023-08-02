@@ -86,13 +86,12 @@ btnOdecet.addEventListener("click", function () {
 btnOdeslat.addEventListener("click", function () {
   if(email.value.includes("@")){
       zavinac.textContent="Email byl odeslán"
+
   }else{
-      zavinac.textContent="V emailu chybí zavináč"
+
+    zavinac.textContent="V emailu chybí zavináč"
+
   }
 
 });
 
-function isEmailValid() {
-    const emailValue = email.value;
-    return emailValue.includes('@');
-  }

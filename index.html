@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KoloSalon</title>
   </head>
   <body>
     <h1>Kolosalon - Půjčovna</h1>
+    <form>
     <section id="cbx">
       <input type="checkbox" name="horske" id="horske" checked />Horské 500
       Kč/den
@@ -48,12 +49,12 @@
     </section>
     <hr />
     <section id="vypocet">
-      <button id="suma">Celková částka</button>
-      <input type="text" name="vysledek" id="vysledek" placeholder="Výsledek" />
+        <input type="button" id="suma" value="Celková částka">
+      <input type="text" name="vysledek" id="vysledek" placeholder="Výsledek" disabled />
       <br />
       <br />
       <input type="text" name="rozpocet" id="rozpocet" placeholder="Váš rozpočet" />
-      <button id="odecet">Odečíst</button>
+      <input type="button" id="odecet" value="Odečíst">
       <br />
       <br />
       <label id="prosel"></label>
@@ -66,9 +67,10 @@
         id="email"
         placeholder="email@email.cz"
       />
-      <button id="odeslat">Odeslat</button>
+      <input type="button" value="Odeslat" id="odeslat">
       <label id="zavinac"></label>
     </section>
+</form>
     <script src="script.js"></script>
   </body>
 </html>
